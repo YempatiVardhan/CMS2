@@ -5,15 +5,16 @@ export let role = "admin";
 export const teachersData = [
   {
     id: 1,
-    teacherId: "1234567890",
+    teacherId: "123",
     name: "John Doe",
-    email: "john@doe.com",
+    email: "r@doe.com",
     photo:
       "https://images.pexels.com/photos/2888150/pexels-photo-2888150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    batches: ["batch A"],
     phone: "1234567890",
-    subjects: ["Math", "Geometry"],
-    classes: ["1B", "2A", "3C"],
     address: "123 Main St, Anytown, USA",
+    linkedin: "https://linkedin.com/in/johndoe",
+    
   },
   {
     id: 2,
@@ -23,9 +24,9 @@ export const teachersData = [
     photo:
       "https://images.pexels.com/photos/936126/pexels-photo-936126.jpeg?auto=compress&cs=tinysrgb&w=1200",
     phone: "1234567890",
-    subjects: ["Physics", "Chemistry"],
-    classes: ["5A", "4B", "3C"],
+    batches: ["batch A"],
     address: "123 Main St, Anytown, USA",
+    linkedin: "https://linkedin.com/in/janedoe",
   },
   {
     id: 3,
@@ -35,9 +36,9 @@ export const teachersData = [
     photo:
       "https://images.pexels.com/photos/428328/pexels-photo-428328.jpeg?auto=compress&cs=tinysrgb&w=1200",
     phone: "1234567890",
-    subjects: ["Biology"],
-    classes: ["5A", "4B", "3C"],
+    batches: [ "batch B"],
     address: "123 Main St, Anytown, USA",
+    linkedin: "https://linkedin.com/in/johndoe"
   },
   {
     id: 4,
@@ -47,9 +48,9 @@ export const teachersData = [
     photo:
       "https://images.pexels.com/photos/1187765/pexels-photo-1187765.jpeg?auto=compress&cs=tinysrgb&w=1200",
     phone: "1234567890",
-    subjects: ["History"],
-    classes: ["5A", "4B", "3C"],
+    batches: ["batch c"],
     address: "123 Main St, Anytown, USA",
+    linkedin: "https://linkedin.com/in/johndoe"
   },
   {
     id: 5,
@@ -59,9 +60,9 @@ export const teachersData = [
     photo:
       "https://images.pexels.com/photos/1102341/pexels-photo-1102341.jpeg?auto=compress&cs=tinysrgb&w=1200",
     phone: "1234567890",
-    subjects: ["Music", "History"],
-    classes: ["5A", "4B", "3C"],
+    batches: [ "batch A"],
     address: "123 Main St, Anytown, USA",
+    linkedin: "https://linkedin.com/in/janesmith",
   },
   {
     id: 6,
@@ -71,9 +72,9 @@ export const teachersData = [
     photo:
       "https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg?auto=compress&cs=tinysrgb&w=1200",
     phone: "1234567890",
-    subjects: ["Physics"],
-    classes: ["5A", "4B", "3C"],
+    batches: ["batch B"],
     address: "123 Main St, Anytown, USA",
+    linkedin: "https://linkedin.com/in/johndoe"
   },
   {
     id: 7,
@@ -83,9 +84,9 @@ export const teachersData = [
     photo:
       "https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=1200",
     phone: "1234567890",
-    subjects: ["English", "Spanish"],
-    classes: ["5A", "4B", "3C"],
+    batches: ["batch C"],
     address: "123 Main St, Anytown, USA",
+    linkedin: "https://linkedin.com/in/johndoe"
   },
   {
     id: 8,
@@ -95,9 +96,9 @@ export const teachersData = [
     photo:
       "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=1200",
     phone: "1234567890",
-    subjects: ["Math", "Geometry"],
-    classes: ["5A", "4B", "3C"],
+    batches: [ "batch A"],
     address: "123 Main St, Anytown, USA",
+    linkedin: "https://linkedin.com/in/johndoe"
   },
   {
     id: 9,
@@ -107,9 +108,9 @@ export const teachersData = [
     photo:
       "https://images.pexels.com/photos/842980/pexels-photo-842980.jpeg?auto=compress&cs=tinysrgb&w=1200",
     phone: "1234567890",
-    subjects: ["Literature", "English"],
-    classes: ["5A", "4B", "3C"],
+    batches: ["batch A"],
     address: "123 Main St, Anytown, USA",
+    linkedin: "https://linkedin.com/in/johndoe"
   },
   {
     id: 10,
@@ -119,135 +120,67 @@ export const teachersData = [
     photo:
       "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1200",
     phone: "1234567890",
-    subjects: ["Biology"],
-    classes: ["5A", "4B", "3C"],
+    batches: ["batch A"],
     address: "123 Main St, Anytown, USA",
+    linkedin: "https://linkedin.com/in/johndoe"
   },
 ];
-
 export const studentsData = [
   {
     id: 1,
-    studentId: "1234567890",
-    name: "John Doe",
-    email: "john@doe.com",
-    photo:
-      "https://images.pexels.com/photos/2888150/pexels-photo-2888150.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    phone: "1234567890",
-    grade: 5,
-    class: "1B",
-    address: "123 Main St, Anytown, USA",
+    studentId: "ST1001",
+    name: "Alice Johnson",
+    email: "alice.johnson@example.com",
+    photo: "https://images.pexels.com/photos/2888150/pexels-photo-2888150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    phone: "+1 555-1234",
+    grade: 10,
+    batches: "Batch A",
+    address: "123 Elm St, Springfield, IL"
   },
   {
     id: 2,
-    studentId: "1234567890",
-    name: "Jane Doe",
-    email: "jane@doe.com",
-    photo:
-      "https://images.pexels.com/photos/936126/pexels-photo-936126.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    phone: "1234567890",
-    grade: 5,
-    class: "5A",
-    address: "123 Main St, Anytown, USA",
+    studentId: "ST1002",
+    name: "Bob Smith",
+    email: "bob.smith@example.com",
+    photo: "https://images.pexels.com/photos/2888150/pexels-photo-2888150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    phone: "+1 555-5678",
+    grade: 11,
+    batches: "Batch B",
+    address: "456 Oak St, Springfield, IL"
   },
   {
     id: 3,
-    studentId: "1234567890",
-    name: "Mike Geller",
-    email: "mike@geller.com",
-    photo:
-      "https://images.pexels.com/photos/428328/pexels-photo-428328.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    phone: "1234567890",
-    grade: 5,
-    class: "5A",
-    address: "123 Main St, Anytown, USA",
+    studentId: "ST1003",
+    name: "Catherine Lee",
+    email: "cath@wxample.com",
+    phone: "+1 555-8765",
+    grade: 9,
+    batches: "Batch A",
+    address: "789 Maple Ave, Springfield, IL"
   },
   {
     id: 4,
-    studentId: "1234567890",
-    name: "Jay French",
-    email: "jay@gmail.com",
-    photo:
-      "https://images.pexels.com/photos/1187765/pexels-photo-1187765.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    phone: "1234567890",
-    grade: 5,
-    class: "5A",
-    address: "123 Main St, Anytown, USA",
+    studentId: "ST1004",
+    name: "Daniel Brown",
+    email: "daniel.brown@example.com",
+    photo: "https://images.pexels.com/photos/2888150/pexels-photo-2888150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    phone: "+1 555-4321",
+    grade: 10,
+    batches: "Batch C",
+    address: "101 Pine Rd, Springfield, IL"
   },
   {
     id: 5,
-    studentId: "1234567890",
-    name: "Jane Smith",
-    email: "jane@gmail.com",
-    photo:
-      "https://images.pexels.com/photos/1102341/pexels-photo-1102341.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    phone: "1234567890",
-    grade: 5,
-    class: "5A",
-    address: "123 Main St, Anytown, USA",
-  },
-  {
-    id: 6,
-    studentId: "1234567890",
-    name: "Anna Santiago",
-    email: "anna@gmail.com",
-    photo:
-      "https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    phone: "1234567890",
-    grade: 5,
-    class: "5A",
-    address: "123 Main St, Anytown, USA",
-  },
-  {
-    id: 7,
-    studentId: "1234567890",
-    name: "Allen Black",
-    email: "allen@black.com",
-    photo:
-      "https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    phone: "1234567890",
-    grade: 5,
-    class: "5A",
-    address: "123 Main St, Anytown, USA",
-  },
-  {
-    id: 8,
-    studentId: "1234567890",
-    name: "Ophelia Castro",
-    email: "ophelia@castro.com",
-    photo:
-      "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    phone: "1234567890",
-    grade: 5,
-    class: "5A",
-    address: "123 Main St, Anytown, USA",
-  },
-  {
-    id: 9,
-    studentId: "1234567890",
-    name: "Derek Briggs",
-    email: "derek@briggs.com",
-    photo:
-      "https://images.pexels.com/photos/842980/pexels-photo-842980.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    phone: "1234567890",
-    grade: 5,
-    class: "5A",
-    address: "123 Main St, Anytown, USA",
-  },
-  {
-    id: 10,
-    studentId: "1234567890",
-    name: "John Glover",
-    email: "john@glover.com",
-    photo:
-      "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    phone: "1234567890",
-    grade: 5,
-    class: "5A",
-    address: "123 Main St, Anytown, USA",
-  },
+    studentId: "ST1005",
+    name: "Emma Davis",
+    email: "emma.davis@example.com",
+    photo: "https://images.pexels.com/photos/2888150/pexels-photo-2888150.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    phone: "+1 555-3344",
+    grade: 12,
+    batches: "Batch B",
+    address: "202 Cedar Blvd, Springfield, IL"
+  }
 ];
-
 export const parentsData = [
   {
     id: 1,
@@ -387,74 +320,44 @@ export const subjectsData = [
 export const classesData = [
   {
     id: 1,
-    name: "1A",
-    capacity: 20,
-    grade: 1,
-    supervisor: "Joseph Padilla",
+    batchname: "Batch A",
+    capacity: 30,
+    teacherId: "T1001",
+    Teachers: ["Mr. John Doe,", "Ms. Alice Smith"],
+    Students: ["Ram,","mini,","neha"],
+    studentId: "S1001",
+    ZoomLink: "https://zoom.us/j/1234567890"
   },
   {
     id: 2,
-    name: "2B",
-    capacity: 22,
-    grade: 2,
-    supervisor: "Blake Joseph",
+    batchname: "Batch B",
+    capacity: 25,
+    teacherId: "T1002",
+    Teachers: ["Dr. Emily White"],
+    Students: ["Sneha,", "kumar"],
+    studentId: "S2001",
+    ZoomLink: "https://zoom.us/j/2345678901"
   },
   {
     id: 3,
-    name: "3C",
+    batchname: "Batch C",
     capacity: 20,
-    grade: 3,
-    supervisor: "Tom Bennett",
+    teacherId: "T1003",
+    Teachers: ["Mr. Mark Brown"],
+    Students: ["S3001,", "S3002,", "S3003,", "S3004,"],
+    studentId: "S3001",
+    ZoomLink: "https://zoom.us/j/3456789012"
   },
   {
     id: 4,
-    name: "4B",
-    capacity: 18,
-    grade: 4,
-    supervisor: "Aaron Collins",
-  },
-  {
-    id: 5,
-    name: "5A",
-    capacity: 16,
-    grade: 5,
-    supervisor: "Iva Frank",
-  },
-  {
-    id: 5,
-    name: "5B",
-    capacity: 20,
-    grade: 5,
-    supervisor: "Leila Santos",
-  },
-  {
-    id: 7,
-    name: "7A",
-    capacity: 18,
-    grade: 7,
-    supervisor: "Carrie Walton",
-  },
-  {
-    id: 8,
-    name: "6B",
-    capacity: 22,
-    grade: 6,
-    supervisor: "Christopher Butler",
-  },
-  {
-    id: 9,
-    name: "6C",
-    capacity: 18,
-    grade: 6,
-    supervisor: "Marc Miller",
-  },
-  {
-    id: 10,
-    name: "6D",
-    capacity: 20,
-    grade: 6,
-    supervisor: "Ophelia Marsh",
-  },
+    batchname: "Batch D",
+    capacity: 28,
+    teacherId: "T1004",
+    Teachers: ["Dr. Sarah Green", "Mr. David Blue"],
+    Students: ["S4001,", "S4002,", "S4003", "S4004", "S4005", "S4006", "S4007"],
+    studentId: "S4001",
+    ZoomLink: "https://zoom.us/j/4567890123"
+  }
 ];
 
 export const lessonsData = [
@@ -856,63 +759,38 @@ export const announcementsData = [
   {
     id: 1,
     title: "About 4A Math Test",
-    class: "4A",
+    Description: "About 4A Math Test",
+  
     date: "2025-01-01",
   },
   {
     id: 2,
     title: "About 3A Math Test",
-    class: "3A",
+    Description: "About 4A Math Test",
+  
     date: "2025-01-01",
   },
   {
     id: 3,
     title: "About 3B Math Test",
-    class: "3B",
+    Description: "About 4A Math Test",
+    
     date: "2025-01-01",
   },
   {
     id: 4,
     title: "About 6A Math Test",
-    class: "6A",
+    Description: "About 4A Math Test",
+   
     date: "2025-01-01",
   },
   {
     id: 5,
     title: "About 8C Math Test",
-    class: "8C",
+    Description: "About 4A Math Test",
+   
     date: "2025-01-01",
-  },
-  {
-    id: 6,
-    title: "About 2A Math Test",
-    class: "2A",
-    date: "2025-01-01",
-  },
-  {
-    id: 7,
-    title: "About 4C Math Test",
-    class: "4C",
-    date: "2025-01-01",
-  },
-  {
-    id: 8,
-    title: "About 4B Math Test",
-    class: "4B",
-    date: "2025-01-01",
-  },
-  {
-    id: 9,
-    title: "About 3C Math Test",
-    class: "3C",
-    date: "2025-01-01",
-  },
-  {
-    id: 10,
-    title: "About 1C Math Test",
-    class: "1C",
-    date: "2025-01-01",
-  },
+  }
 ];
 
 

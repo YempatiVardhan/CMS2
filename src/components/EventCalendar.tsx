@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import calendar from "react-calendar";
+import Calendar from "react-calendar"; // Capitalize the Calendar component
 import "react-calendar/dist/calendar.css";
 
 type ValuePiece = Date | null;
@@ -20,7 +20,7 @@ const Eventcalendar = () => {
     }
   }, [value, router]);
 
-  return <calendar onChange={onChange} value={value} />;
+  return <Calendar onChange={onChange} value={value} />; // Use <Calendar />
 };
 
 export default Eventcalendar;

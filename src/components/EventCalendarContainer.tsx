@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Eventcalendar from "./Eventcalendar";
+import Eventcalendar from "./EventCalendar";
 // import EventList from "./EventList";
 
 const EventcalendarContainer = async ({

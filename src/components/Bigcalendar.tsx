@@ -98,4 +98,3 @@ const BigCalendar = ({ events }: { events: CalendarEvent[] }) => {
 };
 
 export default BigCalendar;
-

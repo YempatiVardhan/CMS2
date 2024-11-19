@@ -1,5 +1,5 @@
 import Announcements from "@/components/Announcements";
-import BigCalendar from "@/components/BigCalendar";
+import BigCalender from "@/components/BigCalender";
 import FormModal from "@/components/FormModal";
 import { role } from "@/lib/data";
 import Image from "next/image";
@@ -93,8 +93,8 @@ const SingleTeacherPage = () => {
         {/* BOTTOM */}
         <div className="mt-4 bg-white rounded-md p-4 h-[800px]">
           <h1>Teacher&apos;s Schedule</h1>
-          {/* Pass the teacher's events to the BigCalendar component */}
-          <BigCalendar events={teacherEvents} />
+          {/* Pass the teacher's events to the BigCalender component */}
+          <BigCalender events={teacherEvents} />
         </div>
       </div>
       {/* RIGHT */}

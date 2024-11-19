@@ -39,7 +39,7 @@ const menuItems = [
       //   visible: ["admin", "teacher", "student", "parent"],
       // },
       // {
-      //   icon: "/calendar.png",
+      //   icon: "/calender.png",
       //   label: "Events",
       //   href: "/list/events",
       //   visible: ["admin", "teacher", "student", "parent"],

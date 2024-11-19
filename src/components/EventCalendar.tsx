@@ -2,14 +2,14 @@
 
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import Calendar from "react-calendar";
-import "react-calendar/dist/Calendar.css";
+import calender from "react-calender";
+import "react-calender/dist/calender.css";
 
 type ValuePiece = Date | null;
 
 type Value = ValuePiece | [ValuePiece, ValuePiece];
 
-const EventCalendar = () => {
+const Eventcalender = () => {
   const [value, onChange] = useState<Value>(new Date());
 
   const router = useRouter();
@@ -20,7 +20,7 @@ const EventCalendar = () => {
     }
   }, [value, router]);
 
-  return <Calendar onChange={onChange} value={value} />;
+  return <calender onChange={onChange} value={value} />;
 };
 
-export default EventCalendar;
+export default Eventcalender;

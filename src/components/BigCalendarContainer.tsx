@@ -1,7 +1,7 @@
 import prisma from "@/lib/prisma";
-import BigCalendar from "./BigCalender";
+import Bigcalender from "./BigCalender";
 
-const BigCalendarContainer = async ({
+const BigcalenderContainer = async ({
   type,
   id,
 }: {
@@ -17,7 +17,7 @@ const BigCalendarContainer = async ({
     },
   });
 
-  // Map batches to calendar events
+  // Map batches to calender events
   const data = batches.flatMap((batch) => {
     const scheduledDays = getScheduledDays(); // Replace with logic for batch schedule
     return scheduledDays.map((day) => ({
@@ -29,12 +29,12 @@ const BigCalendarContainer = async ({
 
   return (
     <div>
-      <BigCalendar events={data} />
+      <Bigcalender events={data} />
     </div>
   );
 };
 
-export default BigCalendarContainer;
+export default BigcalenderContainer;
 
 // Example utility function to generate scheduled days
 function getScheduledDays(): { startTime: Date; endTime: Date }[] {

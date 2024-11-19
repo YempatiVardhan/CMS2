@@ -7,9 +7,9 @@ import { useState } from "react";
 
 // Define the type for calendar events
 interface CalendarEvent {
-  title: string; // Will display the `zoomLink`
-  start: Date;
-  end: Date;
+  title: string; // Title of the event
+  start: Date;   // Start time of the event
+  end: Date;     // End time of the event
 }
 
 const localizer = momentLocalizer(moment);

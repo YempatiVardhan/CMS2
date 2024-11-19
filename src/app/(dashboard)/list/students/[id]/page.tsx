@@ -3,6 +3,23 @@ import BigCalendar from "@/components/BigCalender";
 import Image from "next/image";
 import Link from "next/link";
 
+const events = [
+  {
+    title: "Math Class",
+    start: new Date(2025, 1, 1, 9, 0, 0),
+    end: new Date(2025, 1, 1, 10, 0, 0),
+  },
+  {
+    title: "Science Lab",
+    start: new Date(2025, 1, 1, 11, 0, 0),
+    end: new Date(2025, 1, 1, 12, 0, 0),
+  },
+];
+
+const student = {
+  batch: { id: "12345" },
+};
+
 const SingleStudentPage = () => {
   return (
     <div className="flex-1 p-4 flex flex-col gap-4 xl:flex-row">
@@ -57,7 +74,7 @@ const SingleStudentPage = () => {
                 height={24}
                 className="w-6 h-6"
               />
-              <div className="">
+              <div>
                 <h1 className="text-xl font-semibold">90%</h1>
                 <span className="text-sm text-gray-400">Attendance</span>
               </div>
@@ -71,7 +88,7 @@ const SingleStudentPage = () => {
                 height={24}
                 className="w-6 h-6"
               />
-              <div className="">
+              <div>
                 <h1 className="text-xl font-semibold">6th</h1>
                 <span className="text-sm text-gray-400">Grade</span>
               </div>
@@ -85,7 +102,7 @@ const SingleStudentPage = () => {
                 height={24}
                 className="w-6 h-6"
               />
-              <div className="">
+              <div>
                 <h1 className="text-xl font-semibold">18</h1>
                 <span className="text-sm text-gray-400">Lessons</span>
               </div>
@@ -99,7 +116,7 @@ const SingleStudentPage = () => {
                 height={24}
                 className="w-6 h-6"
               />
-              <div className="">
+              <div>
                 <h1 className="text-xl font-semibold">6A</h1>
                 <span className="text-sm text-gray-400">Class</span>
               </div>
@@ -109,7 +126,7 @@ const SingleStudentPage = () => {
         {/* BOTTOM */}
         <div className="mt-4 bg-white rounded-md p-4 h-[800px]">
           <h1>Student&apos;s Schedule</h1>
-          <BigCalendar />
+          <BigCalendar events={events} />
         </div>
       </div>
       {/* RIGHT */}
@@ -120,7 +137,10 @@ const SingleStudentPage = () => {
             <Link className="p-3 rounded-md bg-lamaSkyLight" href="/">
               Student&apos;s Lessons
             </Link>
-            <Link className="p-3 rounded-md bg-lamaPurpleLight" href="href={`/list/batches?batchId=${student.batch.id}`}">
+            <Link
+              className="p-3 rounded-md bg-lamaPurpleLight"
+              href={`/list/batches?batchId=${student?.batch?.id || "default"}`}
+            >
               Student&apos;s Teachers
             </Link>
             <Link className="p-3 rounded-md bg-pink-50" href="/">
@@ -134,7 +154,6 @@ const SingleStudentPage = () => {
             </Link>
           </div>
         </div>
-        
         <Announcements />
       </div>
     </div>
@@ -142,3 +161,4 @@ const SingleStudentPage = () => {
 };
 
 export default SingleStudentPage;
+``

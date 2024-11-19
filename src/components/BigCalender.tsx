@@ -14,7 +14,7 @@ interface CalendarEvent {
 
 const localizer = momentLocalizer(moment);
 
-const BigCalendar = ({ events }: { events: CalendarEvent[] }) => {
+const BigCalender = ({ events }: { events: CalendarEvent[] }) => {
   const [view, setView] = useState<View>(Views.WORK_WEEK);
 
   const handleOnChangeView = (selectedView: View) => {
@@ -37,4 +37,4 @@ const BigCalendar = ({ events }: { events: CalendarEvent[] }) => {
   );
 };
 
-export default BigCalendar;
+export default BigCalender;

@@ -1,12 +1,12 @@
 "use client";
 
-import { calender, momentLocalizer, View, Views } from "react-big-calender";
+import { calendar, momentLocalizer, View, Views } from "react-big-calendar";
 import moment from "moment";
-import "react-big-calender/lib/css/react-big-calender.css";
+import "react-big-calendar/lib/css/react-big-calendar.css";
 import { useState } from "react";
 
-// Define the type for calender events
-interface calenderEvent {
+// Define the type for calendar events
+interface calendarEvent {
   title: string; // Title of the event
   start: Date;   // Start time of the event
   end: Date;     // End time of the event
@@ -14,7 +14,7 @@ interface calenderEvent {
 
 const localizer = momentLocalizer(moment);
 
-const BigCalender = ({ events }: { events: calenderEvent[] }) => {
+const Bigcalendar = ({ events }: { events: calendarEvent[] }) => {
   const [view, setView] = useState<View>(Views.WORK_WEEK);
 
   const handleOnChangeView = (selectedView: View) => {
@@ -22,7 +22,7 @@ const BigCalender = ({ events }: { events: calenderEvent[] }) => {
   };
 
   return (
-    <calender
+    <calendar
       localizer={localizer}
       events={events}
       startAccessor="start"
@@ -37,4 +37,4 @@ const BigCalender = ({ events }: { events: calenderEvent[] }) => {
   );
 };
 
-export default BigCalender;
+export default Bigcalendar;

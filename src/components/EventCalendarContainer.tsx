@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Eventcalender from "./Eventcalender";
+import Eventcalendar from "./Eventcalendar";
 // import EventList from "./EventList";
 
-const EventcalenderContainer = async ({
+const EventcalendarContainer = async ({
   searchParams,
 }: {
   searchParams: { [keys: string]: string | undefined };
@@ -10,7 +10,7 @@ const EventcalenderContainer = async ({
   const { date } = searchParams;
   return (
     <div className="bg-white p-4 rounded-md">
-      <Eventcalender />
+      <Eventcalendar />
       <div className="flex items-center justify-between">
         <h1 className="text-xl font-semibold my-4">Events</h1>
         <Image src="/moreDark.png" alt="" width={20} height={20} />
@@ -22,4 +22,4 @@ const EventcalenderContainer = async ({
   );
 };
 
-export default EventcalenderContainer;
+export default EventcalendarContainer;

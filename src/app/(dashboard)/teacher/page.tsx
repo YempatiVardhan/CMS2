@@ -1,5 +1,5 @@
 import Announcements from "@/components/Announcements";
-import Bigcalender from "@/components/BigCalender";
+import Bigcalendar from "@/components/Bigcalendar";
 
 const TeacherPage = () => {
   return (
@@ -8,7 +8,7 @@ const TeacherPage = () => {
       <div className="w-full xl:w-2/3">
         <div className="h-full bg-white p-4 rounded-md">
           <h1 className="text-xl font-semibold">Schedule</h1>
-          <Bigcalender />
+          <Bigcalendar />
         </div>
       </div>
       {/* RIGHT */}

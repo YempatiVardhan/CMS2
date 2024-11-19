@@ -794,8 +794,8 @@ export const announcementsData = [
 ];
 
 
-// YOU SHOULD CHANGE THE DATES OF THE EVENTS TO THE CURRENT DATE TO SEE THE EVENTS ON THE calender
-export const calenderEvents = [
+// YOU SHOULD CHANGE THE DATES OF THE EVENTS TO THE CURRENT DATE TO SEE THE EVENTS ON THE calendar
+export const calendarEvents = [
   {
     title: "Math",
     allDay: false,
